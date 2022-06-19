@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace J_uan.Models
 {
-    public class Pager
+    public class Pagination
     {
 
         public int TotalItems { get; set; }
@@ -16,11 +16,11 @@ namespace J_uan.Models
         public int EndPage { get; set; }
 
 
-        public Pager()
+        public Pagination()
         {
 
         }
-        public Pager(int totalItems, int page, int pageSize = 8)
+        public Pagination(int totalItems, int page, int pageSize = 8)
         {
             int totalPages = (int)Math.Ceiling((decimal)totalItems / (decimal)pageSize);
             int currentPage = page;

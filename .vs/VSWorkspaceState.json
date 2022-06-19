@@ -3,8 +3,10 @@
     "",
     "\\J-uan",
     "\\J-uan\\J-uan",
-    "\\J-uan\\J-uan\\Controllers"
+    "\\J-uan\\J-uan\\Controllers",
+    "\\J-uan\\J-uan\\Views",
+    "\\J-uan\\J-uan\\Views\\Shop"
   ],
-  "SelectedNode": "\\J-uan\\J-uan\\Controllers\\ShopController.cs",
+  "SelectedNode": "\\J-uan\\J-uan\\Views\\Shop\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }

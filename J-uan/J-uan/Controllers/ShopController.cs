@@ -28,11 +28,11 @@ namespace J_uan.Controllers
                 pg = 1;
 
             int recsCount = products.Count();
-            var pager = new Pager(recsCount, pg, pageSize);
+            var pagination = new Pagination(recsCount, pg, pageSize);
 
             int recSkip = (pg - 1) * pageSize;
-            var data = products.Skip(recSkip).Take(pager.PageSize).ToList();
-            this.ViewBag.Pager = pager;
+            var data = products.Skip(recSkip).Take(pagination.PageSize).ToList();
+            this.ViewBag.Pagination = pagination;
 
             ShopViewModel shop = new ShopViewModel
             {
