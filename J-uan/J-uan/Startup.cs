@@ -51,7 +51,14 @@ namespace J_uan
 
             app.UseAuthorization();
 
-            
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute(
+                    name: "AdminPanel", 
+                    pattern: "{area:exists}/{controller=Dashboard}/{action=Index}/{id?}");
+            });
+
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
