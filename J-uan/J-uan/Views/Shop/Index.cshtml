@@ -196,34 +196,7 @@
                         </div>
                         <!-- product item list end -->
                         <!-- start pagination area -->
-                        <div class="paginatoin-area text-center mt-45">
-                            @if (pagination.TotalPages > 0)
-                            {
-                                <ul class="pagination-box">
-                                    @if (pagination.CurrentPage >= 2)
-                                    {
-                                        <li class="page-item">
-                                            <a class="page-link" asp-controller="Shop" asp-action="Index" asp-route-pg="@(pagination.CurrentPage-1)"> <i class="ion-ios-arrow-left"></i></a>
-                                        </li>
-
-                                    }
-                                    @for (var pge = pagination.StartPage; pge <= pagination.EndPage; pge++)
-                                    {
-                                        <li class="page-item @(pge==pagination.CurrentPage ? " active":"")">
-                                            <a class="page-link" asp-controller="Shop" asp-action="Index" asp-route-pg="@pge">@pge</a>
-                                        </li>
-                                    }
-                                    @if (pagination.CurrentPage < pagination.TotalPages)
-                                    {
-                                        <li class="page-item">
-                                            <a class="page-link" asp-controller="Shop" asp-action="Index" asp-route-pg="@(pagination.CurrentPage+1)"><i class="ion-ios-arrow-right"></i></a>
-                                        </li>
-
-                                    }
-                                </ul>
-                            }
-
-                        </div>
+                        <partial name="_pagination" model="@pagination"/>
                         <!-- end pagination area -->
                     </div>
                 </div>
