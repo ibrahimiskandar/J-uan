@@ -1,5 +1,8 @@
-﻿using J_uan.Models;
+﻿using J_uan.DAL;
+using J_uan.Models;
+using J_uan.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -11,27 +14,27 @@ namespace J_uan.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        private AppDbContext _context { get; }
+        public HomeController(AppDbContext context)
         {
-            _logger = logger;
+            _context = context;
         }
-
         public IActionResult Index()
         {
-            return View();
-        }
+            HomeViewModel home = new HomeViewModel
+            {
+                Slides = _context.Slides.ToList(),
+                Features = _context.Features.ToList(),
+                Categories = _context.Categories.Where(c => !c.IsDeleted)
+                .Include(pc => pc.ProductsCategories).ThenInclude(ct => ct.Product).ToList(),
+                Products = _context.Products.Where(p => !p.IsDeleted).Include(p => p.Images).ToList(),
+                Images = _context.ProductImages.ToList(),
+                Blogs = _context.Blogs.ToList(),
+                Brands = _context.Brands.ToList()
+            };
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View(home);
         }
     }
 }
+
