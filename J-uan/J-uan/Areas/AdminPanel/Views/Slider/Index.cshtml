@@ -1,0 +1,55 @@
+﻿@model HomeViewModel
+
+@{
+    ViewData["Title"] = "Index";
+    int count = 1;
+}
+
+
+<div class="col-12">
+    <div class="bg-light rounded h-100 p-4">
+        <h6 class="mb-4">Slider</h6>
+        <div class="table-responsive">
+            <button type="button" class="btn btn-success m-2"><i class="bi bi-image">Create</i></button>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Photo</th>
+                        <th scope="col">URl</th>
+                        <th scope="col">SubTitle</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Update</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var img in Model.Slides)
+                    { 
+                    <tr>
+                        <th scope="row">@count++</th>
+                        <td> <img style="width: 40px; border-radius:15px;" src="~/img/slider/@img.Image" alt="this is photo."></td>
+                        <td>
+                            @img.Photo
+                        </td>
+                        <td>
+                            @img.Subtitle
+                        </td>
+                        <td>
+                            @img.Title
+                        </td>
+                        <td>
+                            @img.Description
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-danger m-1"><i class="bi bi-trash">Delete</i></button>
+                            <button type="button" class="btn btn-warning m-1"><i class="bi bi-pencil">Edit</i></button>
+                        </td>
+                    </tr>
+                    }
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

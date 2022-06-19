@@ -13,6 +13,7 @@ namespace J_uan.Controllers
 
     public class ShopController : Controller
     {
+
         private AppDbContext _context { get; }
         public ShopController(AppDbContext context)
         {
@@ -31,6 +32,8 @@ namespace J_uan.Controllers
             var pagination = new Pagination(recsCount, pg, pageSize);
 
             int recSkip = (pg - 1) * pageSize;
+            
+
             var data = products.Skip(recSkip).Take(pagination.PageSize).ToList();
             this.ViewBag.Pagination = pagination;
 
