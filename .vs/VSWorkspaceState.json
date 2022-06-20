@@ -3,10 +3,14 @@
     "",
     "\\J-uan",
     "\\J-uan\\J-uan",
+    "\\J-uan\\J-uan\\Areas",
+    "\\J-uan\\J-uan\\Areas\\AdminPanel",
+    "\\J-uan\\J-uan\\Areas\\AdminPanel\\Views",
+    "\\J-uan\\J-uan\\Areas\\AdminPanel\\Views\\Slider",
     "\\J-uan\\J-uan\\Controllers",
     "\\J-uan\\J-uan\\Views",
     "\\J-uan\\J-uan\\Views\\Shop"
   ],
-  "SelectedNode": "\\J-uan\\J-uan\\appsettings.json",
+  "SelectedNode": "\\J-uan\\J-uan\\Areas\\AdminPanel\\Views\\Slider\\Create.cshtml",
   "PreviewInSolutionExplorer": false
 }

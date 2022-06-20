@@ -80,3 +80,4 @@ C:\Users\Ibrahim\Source\Repos\J-uan\J-uan\J-uan\obj\Debug\netcoreapp3.1\Razor\Ar
 C:\Users\Ibrahim\Source\Repos\J-uan\J-uan\J-uan\obj\Debug\netcoreapp3.1\Razor\Areas\AdminPanel\Views\_ViewImports.cshtml.g.cs
 C:\Users\Ibrahim\Source\Repos\J-uan\J-uan\J-uan\obj\Debug\netcoreapp3.1\Razor\Areas\AdminPanel\Views\_ViewStart.cshtml.g.cs
 C:\Users\Ibrahim\Source\Repos\J-uan\J-uan\J-uan\obj\Debug\netcoreapp3.1\Razor\Areas\AdminPanel\Views\Slider\Index.cshtml.g.cs
+C:\Users\Ibrahim\Source\Repos\J-uan\J-uan\J-uan\obj\Debug\netcoreapp3.1\Razor\Areas\AdminPanel\Views\Slider\Create.cshtml.g.cs

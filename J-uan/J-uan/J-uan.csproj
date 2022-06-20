@@ -14,10 +14,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ViewModels\NewFolder\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Include="wwwroot\js\fonts\fontawesome-webfont3e6e.svg" />
     <None Include="wwwroot\js\fonts\fontawesome-webfont3e6e.woff2" />
     <None Include="wwwroot\js\fonts\ionicons28b5.svg" />

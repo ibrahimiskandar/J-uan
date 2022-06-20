@@ -10,7 +10,7 @@
     <div class="bg-light rounded h-100 p-4">
         <h6 class="mb-4">Slider</h6>
         <div class="table-responsive">
-            <button type="button" class="btn btn-success m-2"><i class="bi bi-image">Create</i></button>
+            <a asp-controller="Slider" asp-action="Create"  class="btn btn-success m-2"><i class="bi bi-image">Create</i></a>
             <table class="table">
                 <thead>
                     <tr>
@@ -38,8 +38,8 @@
                                 @img.Description
                             </td>
                             <td>
-                                <button type="button" class="btn btn-danger m-1"><i class="bi bi-trash">Delete</i></button>
-                                <button type="button" class="btn btn-warning m-1"><i class="bi bi-pencil">Edit</i></button>
+                                <button asp-action="Delete" type="button" class="btn btn-danger m-1"><i class="bi bi-trash">Delete</i></button>
+                                <button asp-action="Edit" type="button" class="btn btn-warning m-1"><i class="bi bi-pencil">Edit</i></button>
                             </td>
                         </tr>
                     }
