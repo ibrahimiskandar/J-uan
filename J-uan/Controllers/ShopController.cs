@@ -34,7 +34,7 @@ namespace J_uan.Controllers
             int recSkip = (pg - 1) * pageSize;
             
 
-            var data = products.Skip(recSkip).Take(pagination.PageSize).ToList();
+            var data = products.Skip(recSkip).OrderByDescending(x => x.CreatedAt).Take(pagination.PageSize).ToList();
             this.ViewBag.Pagination = pagination;
 
             ShopViewModel shop = new ShopViewModel

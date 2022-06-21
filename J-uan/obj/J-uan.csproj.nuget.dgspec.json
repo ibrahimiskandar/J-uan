@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ibrahim\\Source\\Repos\\J-uan\\J-uan\\J-uan\\J-uan.csproj": {}
+    "C:\\Users\\Ibrahim\\Source\\Repos\\J-uan\\J-uan\\J-uan.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ibrahim\\Source\\Repos\\J-uan\\J-uan\\J-uan\\J-uan.csproj": {
+    "C:\\Users\\Ibrahim\\Source\\Repos\\J-uan\\J-uan\\J-uan.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ibrahim\\Source\\Repos\\J-uan\\J-uan\\J-uan\\J-uan.csproj",
+        "projectUniqueName": "C:\\Users\\Ibrahim\\Source\\Repos\\J-uan\\J-uan\\J-uan.csproj",
         "projectName": "J-uan",
-        "projectPath": "C:\\Users\\Ibrahim\\Source\\Repos\\J-uan\\J-uan\\J-uan\\J-uan.csproj",
+        "projectPath": "C:\\Users\\Ibrahim\\Source\\Repos\\J-uan\\J-uan\\J-uan.csproj",
         "packagesPath": "C:\\Users\\Ibrahim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ibrahim\\Source\\Repos\\J-uan\\J-uan\\J-uan\\obj\\",
+        "outputPath": "C:\\Users\\Ibrahim\\Source\\Repos\\J-uan\\J-uan\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ibrahim\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,10 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.26, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[3.1.26, )"

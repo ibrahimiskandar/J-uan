@@ -1,16 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\J-uan",
-    "\\J-uan\\J-uan",
-    "\\J-uan\\J-uan\\Areas",
-    "\\J-uan\\J-uan\\Areas\\AdminPanel",
-    "\\J-uan\\J-uan\\Areas\\AdminPanel\\Views",
-    "\\J-uan\\J-uan\\Areas\\AdminPanel\\Views\\Slider",
-    "\\J-uan\\J-uan\\Controllers",
-    "\\J-uan\\J-uan\\Views",
-    "\\J-uan\\J-uan\\Views\\Shop"
+    "\\J-uan"
   ],
-  "SelectedNode": "\\J-uan\\J-uan\\Areas\\AdminPanel\\Views\\Slider\\Index.cshtml",
+  "SelectedNode": "\\J-uan.sln",
   "PreviewInSolutionExplorer": false
 }

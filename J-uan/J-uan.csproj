@@ -6,6 +6,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20220621020853_IdentityDbUser.cs" />
+    <Compile Remove="Migrations\20220621020853_IdentityDbUser.Designer.cs" />
+    <Compile Remove="Migrations\20220621033243_IntegrateAppUserTable.cs" />
+    <Compile Remove="Migrations\20220621033243_IntegrateAppUserTable.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.26" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.26" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.26">
       <PrivateAssets>all</PrivateAssets>

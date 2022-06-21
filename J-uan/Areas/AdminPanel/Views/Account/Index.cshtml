@@ -1,0 +1,27 @@
+﻿@using J_uan.Models
+@model List<J_uan.Models.AppUser>
+@{
+    ViewData["Title"] = "Index";
+}
+<h1>User Roles</h1>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Fullname</th>
+            <th>Email</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+        <tr>
+            <td>@user.Fullname</td>
+            <td>@user.Email</td>
+            <td>
+                <a class="btn btn-primary">Manage Roles</a>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

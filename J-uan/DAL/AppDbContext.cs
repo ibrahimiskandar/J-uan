@@ -1,4 +1,5 @@
 ﻿using J_uan.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -7,9 +8,20 @@ using System.Threading.Tasks;
 
 namespace J_uan.DAL
 {
-    public class AppDbContext : DbContext
+    public class AppDbContext : IdentityDbContext
     {
-        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
+        private readonly DbContextOptions _options;
+
+        public AppDbContext(DbContextOptions options) : base(options)
+        {
+            _options = options;
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+        }
 
         public DbSet<Slider> Slides { get; set; }
         public DbSet<Features> Features { get; set; }
