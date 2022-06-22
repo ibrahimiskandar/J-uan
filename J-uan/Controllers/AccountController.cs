@@ -85,7 +85,7 @@ namespace J_uan.Controllers
         {
             await _signInManager.SignOutAsync();
 
-            return RedirectToAction("Login");
+            return RedirectToAction("Index","Home");
         }
     }
 }

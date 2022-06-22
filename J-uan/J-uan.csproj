@@ -10,6 +10,8 @@
     <Compile Remove="Migrations\20220621020853_IdentityDbUser.Designer.cs" />
     <Compile Remove="Migrations\20220621033243_IntegrateAppUserTable.cs" />
     <Compile Remove="Migrations\20220621033243_IntegrateAppUserTable.Designer.cs" />
+    <Compile Remove="Migrations\20220621034126_IdentityDbUser.cs" />
+    <Compile Remove="Migrations\20220621034126_IdentityDbUser.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using J_uan.DAL;
 using J_uan.Models;
 using J_uan.ViewModels.User;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace J_uan.Areas.AdminPanel.Controllers
@@ -13,15 +14,15 @@ namespace J_uan.Areas.AdminPanel.Controllers
     public class AccountController : Controller
     {
         private AppDbContext _context { get; }
-        private IEnumerable<AppUser> users;
-        public AccountController(AppDbContext context)
+        private UserManager<AppUser> _user;
+        public AccountController(AppDbContext context, UserManager<AppUser> user)
         {
             _context = context;
-            users = _context.Users.ToList();
+            _user = user;
         }
         public IActionResult Index()
         {
-            return View(users);
+            return View(_user);
         }
     }
 }

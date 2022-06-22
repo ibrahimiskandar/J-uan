@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\J-uan"
+    "\\J-uan",
+    "\\J-uan\\Areas",
+    "\\J-uan\\Areas\\AdminPanel",
+    "\\J-uan\\Areas\\AdminPanel\\Controllers",
+    "\\J-uan\\Controllers"
   ],
   "SelectedNode": "\\J-uan.sln",
   "PreviewInSolutionExplorer": false

@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace J_uan.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20220621034126_IdentityDbUser")]
+    [Migration("20220621102042_IdentityDbUser")]
     partial class IdentityDbUser
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
