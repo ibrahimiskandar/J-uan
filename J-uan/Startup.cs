@@ -29,6 +29,7 @@ namespace J_uan
         {
             services.AddControllersWithViews();
 
+
             services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<AppDbContext>();
 
             services.AddDbContext<AppDbContext>(options =>

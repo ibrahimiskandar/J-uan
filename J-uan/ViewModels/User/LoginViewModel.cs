@@ -8,7 +8,9 @@ namespace J_uan.ViewModels.User
 {
     public class LoginViewModel
     {
+
         [Required]
+        public string UserName { get; set; }
         [EmailAddress]
         public string Email { get; set; }
         [Required]

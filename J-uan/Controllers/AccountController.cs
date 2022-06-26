@@ -32,7 +32,7 @@ namespace J_uan.Controllers
             {
                 var user = new IdentityUser
                 {
-                    UserName = model.Email,
+                    UserName = model.UserName,
                     Email = model.Email,
                 };
 
@@ -69,7 +69,7 @@ namespace J_uan.Controllers
         {
             if (ModelState.IsValid)
             {
-                var result = await _signInManager.PasswordSignInAsync(user.Email, user.Password, user.RememberMe, false);
+                var result = await _signInManager.PasswordSignInAsync(user.UserName, user.Password, user.RememberMe, false);
 
                 if (result.Succeeded)
                 {

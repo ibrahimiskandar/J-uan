@@ -15,7 +15,7 @@ namespace J_uan.Models
         public string Subtitle { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
-        [NotMapped, Required]
+        [NotMapped]
         public IFormFile Photo { get; set; }
     }
 }
